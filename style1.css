@@ -26,7 +26,7 @@ div img {
 
 .rapukeitto {
     z-index: 1;
-    top: 75%;
+    top: 85%;
     right: 15px;
 }
 
@@ -37,7 +37,8 @@ div img {
 }
 
 .mars {
-    
+    top: 100%;
+    right: 50px;
 }
     
     
