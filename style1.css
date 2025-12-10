@@ -5,3 +5,19 @@ background-color: pink;
 .koira {
 margin: 50px;
 }
+
+div {
+    background-color: bisque;
+    margin: 20px;
+    border: solid 3px orange;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: orange;
+}
+
+div img {
+    border-radius: 30px;
+    width: 200px;
+}
+
