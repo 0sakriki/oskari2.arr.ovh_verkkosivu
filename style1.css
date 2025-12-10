@@ -24,3 +24,19 @@ div img {
     width: 40%;
 }
 
+.rapukeitto {
+    z-index: 1;
+    left: 150px;
+}
+
+.minionit {
+    z-index: 2;
+    top: 120px;
+    left: 40px;
+}
+
+.mars {
+    
+}
+    
+    
