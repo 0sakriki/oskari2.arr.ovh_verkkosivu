@@ -23,22 +23,3 @@ div img {
     border-radius: 30px;
     width: 40%;
 }
-
-.rapukeitto {
-    z-index: 1;
-    top: 85%;
-    right: 15px;
-}
-
-.minionit {
-    z-index: 2;
-    top: 50%;
-    right: 40px;
-}
-
-.mars {
-    top: 100%;
-    right: 50px;
-}
-    
-    
