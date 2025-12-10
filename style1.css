@@ -26,12 +26,12 @@ div img {
 
 .rapukeitto {
     z-index: 1;
-    left: 150px;
+    left: 15px;
 }
 
 .minionit {
     z-index: 2;
-    top: 120px;
+    top: 50%;
     left: 40px;
 }
 
