@@ -26,13 +26,13 @@ div img {
 
 .rapukeitto {
     z-index: 1;
-    left: 15px;
+    right: 15px;
 }
 
 .minionit {
     z-index: 2;
     top: 50%;
-    left: 40px;
+    right: 40px;
 }
 
 .mars {
