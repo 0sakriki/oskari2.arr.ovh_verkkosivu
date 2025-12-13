@@ -27,3 +27,13 @@ div img {
 .ale {
     text-align: center;
 }
+
+.Dark {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+.Notdark {
+    color: #000000;
+    backround-color: #FFFFFF;
+}
