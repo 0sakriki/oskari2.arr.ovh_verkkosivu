@@ -8,7 +8,7 @@ text-align: center;
 margin: 50px;
 }
 
-div {
+.oranssi {
     background-color: bisque;
     margin: 20px;
     border: solid 3px orange;
@@ -49,5 +49,11 @@ div img {
 
 .iframe {
     margin: 20px;
+}
+
+.listatkeskelle {
+    margin-right: auto;
+    margin-left: auto;
+    width: 20%;
 }
 
