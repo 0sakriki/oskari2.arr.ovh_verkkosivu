@@ -1,8 +1,7 @@
 body {
 background-color: pink;
 margin: 10px;
-margin-right: auto;
-margin-left: auto;
+text-align: center;
 }
 
 .koira {
@@ -19,6 +18,8 @@ div {
     color: orange;
     width: 50%;
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 div img {
