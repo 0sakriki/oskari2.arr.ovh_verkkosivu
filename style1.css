@@ -1,7 +1,8 @@
 body {
 background-color: pink;
-text-align: center;
 margin: 10px;
+margin-right: auto;
+margin-left: auto;
 }
 
 .koira {
