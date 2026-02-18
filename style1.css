@@ -57,3 +57,12 @@ div img {
     width: 20%;
 }
 
+.vasen {
+    margin-right: 90%;
+}
+
+.container {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+}
