@@ -99,11 +99,21 @@ lastSent = Date.now();
 
 <br>
 <button onclick="pingpong()">Ovikello</button>
+<button onclick="pingpong2()">Ovikello 2</button>
+<button onclick="pingpong3()">Ovikello 3</button>
 <br>
 
 <script>
   function pingpong() {
-    alert("Ping pong!")
+    alert("Ding dong!")
+  }
+  function pingpong2(){
+    var ovikellon_aani = new Audio("dingdong.mp3")
+    ovikellon_aani.play();
+  }
+  function pingpong3(){
+    var ovikellon_aani2 = new Audio("dingdonggoofyahh.mp3")
+    ovikellon_aani2.play();
   }
 </script>
 
