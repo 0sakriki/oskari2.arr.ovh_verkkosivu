@@ -1,3 +1,21 @@
+<html>
+<head>
+<style>
+.tarisee {
+    animation: tarina 0.13s 20;
+}
+
+@keyframes tarina {
+    0% { translate: 0 0; }
+    25% { translate: -10px 10px; }
+    50% { translate: 50px -5px; }
+    75% { translate: -10px -5px; }
+    100% { translate: 0 0; }
+}
+</style>
+</head>
+
+<body>
 <div class="container">
 <a href="/lobotomia.html" style="font-size: x-small;">photo of lobotomia (for Niilo)</a>
 </div>
@@ -160,6 +178,54 @@ lastSent = Date.now();
 <p>Terveelliseen ruokailuun liittyy siis monia asioita kuten syömistottumukset, selkeät ruokailuajat ja riittävät ravintoarvot. Terveellisesti syöminen on tärkeää kunnossa pysymisen ja terveellisen elämän kannalta.</p>
 </details>
 
+<img src="donotpress.png" style="margin: 30px; width: 200px;" onmouseenter="AlakoskeFunktio()" onclick="painoitKuitenkin()">
+
+<script>
+  const aanet = [
+    "nappiAanet/alaPainaNappia.mp3",
+    "nappiAanet/alaPainaNappiaTaiMuuten.mp3",
+    "nappiAanet/eiEiEi.mp3",
+    "nappiAanet/nytLopeta.mp3",
+    "nappiAanet/seis.mp3",
+    "nappiAanet/tungTung.mp3"
+  ]
+
+  function AlakoskeFunktio() {
+    const randomNumero2 = Math.floor(Math.random() * aanet.length);
+    var napinAani = new Audio(aanet[randomNumero2])
+    napinAani.volume = 0.02
+    napinAani.play();
+  }
+
+  function painoitKuitenkin() {
+    var painoitKuitenkinAani = new Audio("nonniPainoitKuitenkin.mp3")
+    painoitKuitenkinAani.volume = 0.02
+    painoitKuitenkinAani.play();
+    
+    setTimeout(() => {
+    document.body.innerHTML = "";
+    document.body.style.backgroundColor = "black";
+    }, 3000);
+
+    setTimeout(() => {
+    const yllatusKuva = document.createElement("img");
+    yllatusKuva.src = "kissaNukkuu.jpg";
+
+    yllatusKuva.style.position = "fixed";
+    yllatusKuva.style.top = "50%";
+    yllatusKuva.style.left = "50%";
+    yllatusKuva.style.transform = "translate(-50%, -50%)";
+    yllatusKuva.style.width = "40%";
+
+    yllatusKuva.classList.add("tarisee");
+    document.body.appendChild(yllatusKuva);
+    var yllatusAani = new Audio("scaryScream3.mp3")
+    yllatusAani.volume = 1.0
+    yllatusAani.play();
+    }, 7000);
+    
+  }
+</script>
 
 <div>
 <h1 class="oranssi">ALE VAIN TÄNÄÄN</h1>
@@ -240,4 +306,5 @@ function vaihdaTaustakuva() {
 <br>
 
 
-
+</body>
+</html>
