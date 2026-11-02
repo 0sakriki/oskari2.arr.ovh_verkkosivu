@@ -1,0 +1,51 @@
+<link rel='stylesheet' href='style1.css'>
+
+<fieldset style="width: 1000px; margin: 30px auto;">
+  <legend>Auton kulutuslaskuri</legend>
+  <p>Anna laskuriin vain numerot, ei yksiköitä</p>
+  <p>Käytä pilkkujen sijasta pistettä</p>
+
+  <label>Auton kulutus 100km kohti:</label>
+  <input id="kulutus_id">
+  <br>
+
+  <label>Polttoaineen hinta per litra:</label>
+  <input id="menovesihinta_id">
+  <br>
+
+  <label>Koko matkan pituus:</label>
+  <input id="matkanpituus_id">
+  <br>
+
+  <label>Bensakulujen jako (montako henkilöä):</label>
+  <input id="bensakulujenjako_id">
+  <br>
+
+  <button onclick="kulutuslasku()">Laske</button>
+  <br>
+
+  <p id="tulos_kokonaiskulutus"></p>
+
+  <p id="tulos_kokonaishinta"></p>
+
+  <p id="tulos_hintaPerHenkilö"></p>
+</fieldset>
+
+<script>
+  function kulutuslasku() {
+  const kulutus = document.getElementById("kulutus_id").value
+  const menovesihinta = document.getElementById("menovesihinta_id").value
+  const matkanpituus = document.getElementById("matkanpituus_id").value
+  const bensakulujenjako = document.getElementById("bensakulujenjako_id").value
+
+  const matkankulutus = kulutus/100*matkanpituus
+  const matkanhinta = matkankulutus*menovesihinta
+  const matkanhinta_per_henkilö = matkanhinta/bensakulujenjako
+
+  document.getElementById("tulos_kokonaiskulutus").textContent = "Koko matkan polttoineen kulutus: " + matkankulutus.toFixed(2) + " litraa";
+  document.getElementById("tulos_kokonaishinta").textContent = "Koko matkan bensakulut: " + matkanhinta.toFixed(2) + " euroa";
+  document.getElementById("tulos_hintaPerHenkilö").textContent = "Matkan hinta per matkustaja (" + bensakulujenjako + " matkustajaa): " + matkanhinta_per_henkilö.toFixed(2) + " euroa";
+  }
+</script>
+
+<a href="https://oskari.top"><button>Takaisin</button></a>
